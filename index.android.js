@@ -20,18 +20,27 @@ export default class HelloProject extends Component {
     };
     return (
 //      <Image source={pic} style={{width:193,height:110}} />
-       <View style={styles.container}>
-         <Text style={styles.welcome}>
-         HelloProject
-         </Text>
-         <Text style={styles.instructions}>
-           To get started, edit index.android.js
-         </Text>
-         <Text style={styles.instructions}>
-           Double tap R on your keyboard to reload,{'\n'}
-           Shake or press menu button for dev menu
-         </Text>
-       </View>
+//       <View style={styles.container}>
+//         <Text style={styles.welcome}>
+//         HelloProject
+//         </Text>
+//         <Text style={styles.instructions}>
+//           To get started, edit index.android.js
+//         </Text>
+//         <Text style={styles.instructions}>
+//           Double tap R on your keyboard to reload,{'\n'}
+//           Shake or press menu button for dev menu
+//         </Text>
+//       </View>
+
+        <View>
+        <Text style={styles.red}>just red</Text>
+        <Text style={styles.bigblue}>just bigblue</Text>
+        <Text style={[styles.bigblue,styles.red]}> bigblue,then red</Text>
+        <Text style={[styles.red,styles.bigblue]}> red,then bigblue</Text>
+        </View>
+
+
     );
   }
 }
@@ -39,6 +48,11 @@ export default class HelloProject extends Component {
 
 
 const styles = StyleSheet.create({
+
+
+
+
+
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -57,6 +71,21 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+
+
+   bigblue:{
+        color :'blue',
+        fontWeight:'bold',
+        fontSize:30,
+      },
+
+
+      red:{
+
+      color :'red',
+      },
+
+
 });
 
 
